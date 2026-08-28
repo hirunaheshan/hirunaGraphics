@@ -533,6 +533,70 @@ body {
 }
 
 /* ==========================================
+   VERIFIED CERTIFICATE CARD & BUTTONS
+   ========================================== */
+.verified-credential {
+  background: #FFFDF9;
+  border: 1.5px dashed var(--terracotta);
+  padding: 1.4rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  position: relative;
+  border-left: 1.5px dashed var(--terracotta);
+}
+
+.credential-badge-tag {
+  position: absolute;
+  top: -12px;
+  right: 15px;
+  background: var(--mustard);
+  color: #2b2200;
+  font-family: var(--font-sketch);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.15rem 0.8rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.certificate-action-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1D1D1D;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.pdf-btn:hover {
+  background: var(--terracotta);
+  transform: translateY(-2px);
+}
+
+.pdf-btn.outline {
+  background: transparent;
+  color: #1D1D1D;
+  border: 1px solid #1D1D1D;
+}
+
+.pdf-btn.outline:hover {
+  background: #1D1D1D;
+  color: #FFFFFF;
+}
+
+/* ==========================================
    TOOLKIT & DESIGN STATEMENT
    ========================================== */
 .toolkit-testimonial-section {
